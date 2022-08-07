@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project name</title>
+    <style>
+      body {
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgba(216, 241, 230, 0.46) 0.1%,
+          rgba(233, 226, 226, 0.28) 90.1%
+        );
+      }
+      h1 {
+        text-align: center;
+        color: #668ba4;
+        font-size: 30px;
+
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+      h2 {
+        text-align: center;
+
+        color: whitesmoke;
+        background-color: #97cba9;
+        border: 2px solid;
+        padding: 15px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+        font-size: 22px;
+        border-radius: 5px;
+      }
+      img {
+        display: block;
+        margin: auto;
+        border-radius: 2px;
+        max-width: 90%;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 15px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+      }
+      a {
+        display: block;
+        font-size: 14px;
+        margin-top: 10px;
+        color: #668ba4;
+      }
+      .a:hover {
+        text-decoration: underline;
+      }
+      h3 {
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+        font-size: 20px;
+        background-color: #dde0ab;
+        margin: 0 auto;
+        padding: 15px;
+        border-radius: 3px;
+        font-weight: 600;
+      }
+      ul {
+        text-align: center;
+        list-style: none;
+        font-size: 15px;
+        background-color: #eef0dd;
+      }
+
+      li {
+        margin-top: 10px;
+        padding: auto 20px;
+        font-size: 18px;
+        transition: all 200ms;
+      }
+      li:hover {
+        cursor: pointer;
+        color: #97cba9;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        padding: 15px 20px;
+        background-color: #feffdf;
+        color: #668ba4;
+        font-size: 30px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+        border: none;
+      }
+      button:hover {
+        background-color: #668ba4;
+        color: #feffdf;
+        margin: 0 auto;
+        border: #668ba4;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: all 100ms;
+        box-shadow: 5px 5px 10px rgba(216, 241, 230, 0.46);
+      }
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>My Hero Academia</h1>
+      <h2>Boku no Hīrō Akademia</h2>
+      <img
+        src=" https://m.media-amazon.com/images/M/MV5BMTVjMmE0NDMtNjE5My00YTY4LWE1NWQtYzY3OWI5NzgwZjU5XkEyXkFqcGdeQTNwaW5nZXN0._V1_QL75_UX500_CR0,0,500,281_.jpg"
+        alt="deku"
+        width="450"
+      />
+      <p>
+        <strong>My Hero Academia</strong> is a Japanese superhero manga series
+        written and illustrated by Kōhei Horikoshi. The story follows Izuku
+        Midoriya, a boy born without superpowers in a world where they have
+        become commonplace, but who still dreams of becoming a superhero
+        himself.
+        <br />
+        <a
+          href="https://en.wikipedia.org/wiki/My_Hero_Academia"
+          target="_blank"
+        >
+          Learn more on Wikipedia</a
+        >
+      </p>
+      <hr />
+      <h3>Main characters 👇</h3>
+      <ul>
+        <li>Izuku Midoriya</li>
+        <li>Katsuki Bakugo</li>
+        <li>Ochaco Uraraka</li>
+        <li>Tenya Ida</li>
+        <li>Shoto Todoroki</li>
+        <li>Eijiro Kirishima</li>
+        <li>Denki Kaminari</li>
+        <li>Kyoka Jiro</li>
+      </ul>
+      <button>Become a Pro Hero</button>
+    </div>
+
+    <span>Coded by <em>anik</em></span>
+    <script>
+      function write() {
+        let name = prompt("What is your name?");
+        let heroName = prompt("Choose your hero name");
+
+        if (name.length > 0) {
+          alert(
+            "Great job, " +
+              name +
+              ". From now people will now you as " +
+              heroName +
+              "💪"
+          );
+        } else {
+          alert("Try again ✌️");
+        }
+      }
+      let heroButton = document.querySelector("button");
+      heroButton.addEventListener("click", write);
+    </script>
+  </body>
+</html>
